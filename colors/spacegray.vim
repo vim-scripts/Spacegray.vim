@@ -1,6 +1,6 @@
 " SpaceGray.vim -- Vim colorscheme.
 " Maintainer: Akshay Hegde (github.com/ajh17)
-" Version: v1.0
+" Version: 1.1
 " A colorscheme loosely modeled after the spacegray theme for Xcode.
 " This colorscheme is 256color and up only.
 
@@ -34,6 +34,7 @@ hi Type            ctermbg=NONE ctermfg=11     guibg=NONE     guifg=#E5C078  cte
 hi Cursor          ctermbg=NONE ctermfg=NONE   guibg=#6C6C6C  guifg=NONE     cterm=NONE      gui=NONE
 hi CursorColumn    ctermbg=0    ctermfg=NONE   guibg=#303030  guifg=NONE     cterm=NONE      gui=NONE
 hi CursorLine      ctermbg=0    ctermfg=NONE   guibg=#303030  guifg=NONE     cterm=NONE      gui=NONE
+hi ColorColumn     ctermbg=235  ctermfg=NONE   guibg=#303537  guifg=NONE     cterm=NONE      gui=NONE
 
 hi Todo            ctermbg=NONE ctermfg=NONE   guibg=NONE     guifg=NONE     cterm=reverse   gui=reverse
 hi Error           ctermbg=52   ctermfg=12     guibg=NONE     guifg=#AF5F5F  cterm=underline gui=reverse
@@ -122,10 +123,19 @@ hi link SpecialChar         Special
 hi link SpecialComment      Special
 hi link Tag                 Special
 
+" HTML
 hi link htmlEndTag          htmlTagName
 hi link htmlLink            Function
 hi link htmlSpecialTagName  htmlTagName
 hi link htmlTag             htmlTagName
 
+" Rails
+hi link rubyRailsARAssociationMethod  Statement
+hi link rubyRailsARValidationMethod   Statement
+hi link rubyRailsARMethod             Statement
+hi link rubyRailsARCallbackMethod     Statement
+hi link rubyRailsARClassMethod        Statement
+
+" Diff
 hi link diffAdded           String
 hi link diffRemoved         Constant
