@@ -6,16 +6,16 @@ the [spacegray](https://github.com/zdne/spacegray-xcode) theme for Xcode.
 ## Screenshots
 
 Here are a few screenshots of Spacegray:
+(Font used: Fira Mono 12pt)
 
-### C
-
-![Spacegray in C](http://cl.ly/Yxcd/C-spacegray.png)
-
-### JavaScript
+### JavaScript (GUI Vim)
 ![Spacegray in JavaScript](http://cl.ly/Yx75/JS-Spacegray.png)
 
-### Vim
+### Vim (GUI Vim)
 ![Spacegray in Vim](http://cl.ly/Yxfr/vim-spacegray.png)
+
+### Ruby (Terminal Vim)
+![Spacegray in Ruby](http://cl.ly/ZMR9/ruby-spaceray.png)
 
 ## Installation
 
@@ -41,15 +41,19 @@ if using tmux or screen, `screen-256color`.
 Spacegray will look good in a dark terminal colorscheme, but if you use
 Spacegray's color palette, it will look beautiful.
 
-### iTerm2
+### Terminal Colorschemes
 
-If you use iTerm2, Spacegray.itemcolors is provided with the download.
+On OS X, colorschemes for iTerm2 and Terminal.app are provided with the download.
+Simply double click to install.
 
-### Terminator
+Spacegray.terminator is also provided for Terminator and can be installed by
+copying to `~/.config/terminator/config` on Linux or
+`$XDG_CONFIG_HOME/terminator/config` if you're running OS X.
 
-For terminator users, Spacegray.terminator is provided and can be installed by
-copying to `~/.config/terminator/config` on Linux or `$XDG_CONFIG_HOME/terminator/config`
-if you're running OS X.
+For gnome-terminal on Linux, simply move the `%gconf.xml`, provided with the
+download, to the `~/.gconf/apps/gnome-terminal/profiles/Default` folder. You
+might have to restart gconfd for changes to take effect ( Use `gconftool
+--shutdown`, move the file, then use `gconftool-2 --spawn`)
 
 ### Xresources
 
